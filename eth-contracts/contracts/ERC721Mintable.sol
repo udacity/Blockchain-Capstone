@@ -443,7 +443,9 @@ contract ERC721Metadata is ERC721Enumerable, usingOraclize {
 
 
     // TODO: Create an internal function to set the tokenURI of a specified tokenId
-    // TIP: use strConcat() from the imported oraclizeAPI lib to set the complete token URI
+    // It should be the _baseToeknURI + the tokenId in string form
+    // TIP #1: use strConcat() from the imported oraclizeAPI lib to set the complete token URI
+    // TIP #2: you can also use uint2str() to convert a uint to a string
         // see https://github.com/oraclize/ethereum-api/blob/master/oraclizeAPI_0.5.sol for strConcat()
     // require the token exists before setting
 
