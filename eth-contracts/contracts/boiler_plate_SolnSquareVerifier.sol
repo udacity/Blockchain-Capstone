@@ -1,7 +1,6 @@
 pragma solidity >=0.4.21 <0.6.0;
 
-// import openZeppelin ERC721 Enumerable
-// import openZeppelin ERC721 Metadata
+// import './ERC721Mintable.sol';
 
 
 
