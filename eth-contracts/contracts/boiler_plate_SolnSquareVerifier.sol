@@ -4,7 +4,7 @@ pragma solidity >=0.4.21 <0.6.0;
 
 
 
-// define a contract named SolnSquareVerifier that uses ERC721Enumerable and ERC721Metadata
+// define a contract named SolnSquareVerifier that inherits ERC721Mintable
 
 
 
