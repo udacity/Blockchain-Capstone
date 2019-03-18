@@ -9,6 +9,10 @@ contract('TestERC721Mintable', accounts => {
             // mint mulitple tokens
         })
 
+        it('should fail when minting when address is not contract owner', async function () { 
+            
+        })
+
         it('should return contract owner', async function () { 
             
         })
@@ -23,6 +27,10 @@ contract('TestERC721Mintable', accounts => {
 
         // token uri should be complete i.e: 'https://api.cryptokitties.co/kitties/1'
         it('should return token uri', async function () { 
+           
+        })
+
+        it('should transfer token from one owner to another', async function () { 
            
         })
     });
