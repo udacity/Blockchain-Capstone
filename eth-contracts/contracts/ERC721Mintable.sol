@@ -9,7 +9,7 @@ import "./Oraclize.sol";
 contract Ownable {
     //  TODO's
     //  1) create a private '_owner' variable of type address with a public getter function
-    //  2) create an internal construcor that sets the _owner var to the creater of the contract 
+    //  2) create an internal constructor that sets the _owner var to the creater of the contract 
     //  3) create an 'onlyOwner' modifer that throws if called by any account other than the owner.
     //  4) fill out the transferOwnership function
     //  5) create an event that emits anytime ownerShip is transfered (including in the constructor)
@@ -23,7 +23,7 @@ contract Ownable {
 
 //  TODO's: Create a Pausable contract that inherits from the Ownable contract
 //  1) create a private '_paused' variable of type bool
-//  2) create an internal construcor that sets the _paused variable to false
+//  2) create an internal constructor that sets the _paused variable to false
 //  3) create 'whenNotPaused' & 'paused' modifier that throws in the appropriate situation
 //  4) create a Paused & Unpaused event that emits the address that triggered the event
 
