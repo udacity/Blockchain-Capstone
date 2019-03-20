@@ -25,8 +25,7 @@ contract Ownable {
 //  1) create a private '_paused' variable of type bool
 //  2) create an internal construcor that sets the _paused variable to false
 //  3) create 'whenNotPaused' & 'paused' modifier that throws in the appropriate situation
-//  4) fill out the transferOwnership function
-//  5) create a Paused & Unpaused event that emits the address that triggered the event
+//  4) create a Paused & Unpaused event that emits the address that triggered the event
 
 contract ERC165 {
     bytes4 private constant _INTERFACE_ID_ERC165 = 0x01ffc9a7;
