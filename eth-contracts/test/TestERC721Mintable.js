@@ -25,7 +25,7 @@ contract('TestERC721Mintable', accounts => {
             
         })
 
-        it('should safe transfer token from one owner to another', async function () { 
+        it('should transfer token from one owner to another', async function () { 
             
         })
     });
