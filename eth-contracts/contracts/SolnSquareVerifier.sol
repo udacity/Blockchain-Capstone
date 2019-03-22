@@ -3,55 +3,37 @@ pragma solidity >=0.4.21 <0.6.0;
 // import './ERC721Mintable.sol';
 
 
-
-// define a contract named SolnSquareVerifier that inherits ERC721Mintable
-
-
-
-  // define a struct that can hold index, address, and image
+// TODO define a contract call to the zokrates generated solidity contract <Verifier> or <renamedVerifier>
 
 
 
-
-  // define an array of the above struct
-
-
-  // define a mapping to store unique solutions submitted
+// TODO define another contract named SolnSquareVerifier that inherits ERC721Mintable
 
 
 
-  // Create an event to emit when a Solution is added
+  // TODO define a solutions struct that can hold index, address, and image
+
+
+  // TODO define an array of the above struct
+
+
+  // TODO define a mapping to store unique solutions submitted
 
 
 
-  // Create a function to add the solutions to the array and emit the event
+  // TODO Create an event to emit when a solution is added
 
 
 
-
-
-  // Create a function to mint new NFT
-  
+  // TODO Create a function to add the solutions to the array and emit the event
 
 
 
-
-
-
-
-
-
-
-
-
+  // TODO Create a function to mint new NFT only after the solution has been verified
+  //  - make sure the solution is unique (has not been used before)
+  //  - make sure you handle metadata as well as tokenSuplly
 
   
-      // Increase the Total Supply by 1
-
-
-
-      // Mint and set the Metadata
-  
 
 
 
@@ -59,7 +41,19 @@ pragma solidity >=0.4.21 <0.6.0;
 
 
 
-// define a contract call to the zokrates generated solidity contract <Verifier> or <renamedVerifier>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
