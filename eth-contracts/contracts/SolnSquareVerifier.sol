@@ -8,7 +8,7 @@ pragma solidity >=0.4.21 <0.6.0;
 
 
 
-// TODO define a solutions struct that can hold index, address, and image
+// TODO define a solutions struct that can hold an index & an address
 
 
 // TODO define an array of the above struct
