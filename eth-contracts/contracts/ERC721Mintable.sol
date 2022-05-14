@@ -1,9 +1,10 @@
-pragma solidity ^0.5.0;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
 
-import 'openzeppelin-solidity/contracts/utils/Address.sol';
-import 'openzeppelin-solidity/contracts/drafts/Counters.sol';
-import 'openzeppelin-solidity/contracts/math/SafeMath.sol';
-import 'openzeppelin-solidity/contracts/token/ERC721/IERC721Receiver.sol';
+import '@openzeppelin/contracts/utils/Address.sol';
+import '@openzeppelin/contracts/utils/Counters.sol';
+import '@openzeppelin/contracts/utils/math/SafeMath.sol';
+import '@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol';
 import "./Oraclize.sol";
 
 contract Ownable {
