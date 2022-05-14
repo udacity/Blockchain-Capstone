@@ -294,7 +294,7 @@ contract usingOraclize {
 
     modifier oraclizeAPI {
         if ((address(OAR) == address(0)) || (getCodeSize(address(OAR)) == 0)) {
-            oraclize_setNetwork(networkID_auto);
+            oraclize_setNetwork();
         }
         if (address(oraclize) != OAR.getAddress()) {
             oraclize = OraclizeI(OAR.getAddress());
@@ -310,9 +310,9 @@ contract usingOraclize {
         _;
     }
 
-    function oraclize_setNetwork(uint8 _networkID) internal returns (bool _networkSet) {
-      return oraclize_setNetwork();
-    }
+    // function oraclize_setNetwork(uint8 _networkID) internal returns (bool _networkSet) {
+    //   return oraclize_setNetwork();
+    // }
 
     function oraclize_setNetworkName(string memory _network_name) internal {
         oraclize_network_name = _network_name;
@@ -358,13 +358,13 @@ contract usingOraclize {
         return false;
     }
 
-    function __callback(bytes32 _myid, string memory _result) public pure {
-        __callback(_myid, _result, new bytes(0));
-    }
+    // function __callback(bytes32 _myid, string memory _result) public pure {
+    //     __callback(_myid, _result, new bytes(0));
+    // }
 
-    function __callback(bytes32 _myid, string memory _result, bytes memory _proof) public pure {
-      return;
-    }
+    // function __callback(bytes32 _myid, string memory _result, bytes memory _proof) public pure {
+    //   return;
+    // }
 
     function oraclize_getPrice(string memory _datasource) oraclizeAPI internal returns (uint _queryPrice) {
         return oraclize.getPrice(_datasource);
