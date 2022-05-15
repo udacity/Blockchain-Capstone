@@ -3,9 +3,9 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/utils/Address.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
+import "@openzeppelin/contracts/utils/Strings.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
-import "./Oraclize.sol";
 
 abstract contract Ownable {
     address public _owner;
@@ -533,7 +533,8 @@ contract ERC721Enumerable is ERC165, ERC721 {
     }
 }
 
-contract ERC721Metadata is ERC721Enumerable, usingOraclize {
+contract ERC721Metadata is ERC721Enumerable {
+
     string private _name;
     string private _symbol;
     string private _baseTokenURI;
@@ -584,7 +585,8 @@ contract ERC721Metadata is ERC721Enumerable, usingOraclize {
     // set the tokenURI of a specified tokenId
     function _setTokenURI(uint256 tokenId) internal {
         require(_exists(tokenId));
-        _tokenURIs[tokenId] = strConcat(_baseTokenURI, uint2str(tokenId));
+        string memory tokenIdStr = Strings.toString(tokenId);
+        _tokenURIs[tokenId] = string.concat(_baseTokenURI, tokenIdStr);
     }
 }
 
@@ -598,7 +600,7 @@ contract ERC721Mintable is ERC721Metadata {
     {}
 
     function mint(address to, uint256 tokenId) public onlyOwner returns (bool) {
-        _mint(to, tokenId);
+        super._mint(to, tokenId);
         _setTokenURI(tokenId);
         return true;
     }
