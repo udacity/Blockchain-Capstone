@@ -588,7 +588,7 @@ contract ERC721Metadata is ERC721Enumerable, usingOraclize {
     }
 }
 
-contract CustomERC721Token is ERC721Metadata {
+contract ERC721Mintable is ERC721Metadata {
     constructor()
         ERC721Metadata(
             "Test Token",

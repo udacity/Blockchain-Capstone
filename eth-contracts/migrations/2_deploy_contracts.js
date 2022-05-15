@@ -1,5 +1,5 @@
 // migrating the appropriate contracts
-var ERC721Mintable = artifacts.require("CustomERC721Token");
+var ERC721Mintable = artifacts.require("ERC721Mintable");
 // var SquareVerifier = artifacts.require("./SquareVerifier.sol");
 // var SolnSquareVerifier = artifacts.require("./SolnSquareVerifier.sol");
 
